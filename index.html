@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0; padding: 0;box-sizing: border-box;
+    }
+    body{
+        /* background-color: #EC449B; */
+        background-color: #99F443;
+    }
+    #header{
+        margin: 0.5rem;
+        background-color: #FCF6F5FF;
+       
+        height: 3.5rem;
+        width: auto;
+        background: rgba(255, 2555, 255, .1);
+    }
+    .container{
+        padding: 11px 11px;
+       
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px 10px;
+    }
+    nav ul li a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    /* .........................................content css start......................................*/
+    #box{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+       
+        
+
+    }
+    .box1{
+        /* display: inline-block; */
+        
+        background-color: #FCF6F5FF;
+        border-radius: 1rem;
+        height: 40rem;
+        width: 66rem;
+        background: rgba(255, 2555, 255, .1);
+    
+    }
+    .box1 h2{
+        text-align: center;
+        float: right;
+        padding-top: 25rem;
+    }
+    .box1 a{
+        
+       
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        text-decoration: none;
+        float: right;
+        padding-top: 35rem;
+        border-radius: 2rem;
+    }
+
+    .box2{
+        
+        background-color: #FCF6F5FF;
+        border-radius: 1rem;
+        height: 39rem;
+        width: 25rem;
+        background: rgba(255, 2555, 255, .1);
+
+    }
+    .box2 .slider{
+        height: 39rem; width: 25rem;
+        background-position: fixed;
+        background-size: contain;
+        animation: float 3s linear infinite;
+    }
+
+    @keyframes float{
+         0% {background-image: url("slide1.jpg");}
+
+         50%{background-image: url("slide2.jpg");}
+
+         100%{background-image: url("slide3.jpg");}
+    }
+    
+    #box .box1 .inbox{
+        background-color: #EC449B;
+        height: 38.2rem;
+        width: 50rem;
+        border-radius: 1rem 3rem 700rem 1rem;
+    }
+
+    #box .box1 .inbox img{
+        height: 28rem; width: 34rem;
+        padding-left: 6rem;
+        padding-top: 6rem;
+        animation: ani 3s linear infinite;
+    }
+
+   
+    
+    @keyframes ani{
+         0% , 100%{transform: translateY(0rem);}
+
+         50%{transform: translateY(3rem);}
+    }
+
+    
+
+
+     /* .........................................content css end......................................*/
+
+     /* ...............................................design section css starts.............................. */
+     .design{
+        background-color: #FCF6F5FF;
+        border-radius: 1rem;
+        height: 30rem;
+        width: auto;
+        margin: 1rem;
+        background: rgba(255, 2555, 255, .1);
+
+     }
+     .design h2{
+        text-align: center;
+        padding: 2rem;
+     }
+     .gridcontainer{
+        
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 14rem 14rem 14rem 14rem;
+        grid-template-rows: 8rem 8rem 8rem 8rem;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        justify-content: space-evenly;
+        height: 4rem; 
+        
+
+     }
+
+     .grid{
+        background-color: aqua;
+        border: 1px solid black;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        
+     }
+
+
+
+
+
+     /* ...............................................design section css ends.............................. */
+
+      /* ...............................................Gallery section starts.............................. */
+      .gallery{
+        background-color: #FCF6F5FF;
+        border-radius: 1rem;
+        height: 30rem;
+        width: auto;
+        margin: 1rem;
+        background: rgba(255, 2555, 255, .1);
+
+     }
+
+     
+
+
+
+     .gallery h2{
+        text-align: center;
+        padding: 2rem;
+     }
+     
+     .gridcontainer1{
+        
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 14rem 14rem 14rem 14rem;
+        grid-template-rows: 8rem 8rem 8rem 8rem;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        justify-content: space-evenly;
+        height: 4rem; 
+        
+
+     }
+
+     .grid1{
+        background-color: aqua;
+        border: 1px solid black;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        
+     }
+
+
+
+
+     /* ...............................................Gallery section ends.............................. */
+
+     /* ...............................................Popular section starts.............................. */
+     .popular{
+        background-color: #FCF6F5FF;
+        border-radius: 1rem;
+        height: 30rem;
+        width: auto;
+        margin: 1rem;
+        background: rgba(255, 2555, 255, .1);
+
+     }
+
+     .popular h2{
+        text-align: center;
+        padding: 2rem;
+     }
+     
+     .gridcontainer2{
+        
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 14rem 14rem 14rem 14rem;
+        grid-template-rows: 8rem 8rem 8rem 8rem;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        justify-content: space-evenly;
+        height: 4rem; 
+        
+
+     }
+
+     .grid2{
+        background-color: aqua;
+        border: 1px solid black;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        
+     }
+
+
+
+
+     /* ...............................................Popular section ends.............................. */
+
+     /* ...............................................review section starts.............................. */
+     #review{
+        background-color: #FCF6F5FF;
+        border-radius: 1rem;
+        height: 30rem;
+        width: auto;
+        margin: 1rem;
+        background: rgba(255, 2555, 255, .1);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+     }
+
+     #review h2{
+        text-align: center;
+        padding: 1rem;
+     }
+     #review .col1{
+        background-color: #52ec44;
+
+     }
+
+     #review .col2{
+        background-color: #44ecd8;
+        
+    }
+
+    #review .col3{
+        background-color: #152926;
+        
+    }
+
+    #review .col4{
+        background-color: #dbec44;
+    }
+    
+
+
+     /* ...............................................review section ends.............................. */
+
+
+      /* ...............................................About us section starts.............................. */
+      .aboutus{
+        background-color: #EC449B;
+        border-radius: 1rem;
+        height: 25rem;
+        width: auto;
+        /* margin: 1rem; */
+        padding: 1rem;
+        /* background: rgba(255, 2555, 255, .1); */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around
+       
+
+
+     }
+
+     h2{
+        text-align: center;
+        padding: 1rem;
+        
+
+     }
+     .aboutus .c1{
+        
+        background-color: rgb(105, 63, 63);
+        height: 22rem; width: 22rem;
+     }
+     .aboutus .c2{
+        background-color: rgb(173, 65, 65);
+        height: 22rem; width: 22rem;
+     }
+     .aboutus .c3{
+        background-color: rgb(210, 28, 28);
+        height: 22rem; width: 22rem;
+     }
+     .aboutus .c4{
+        background-color: rgb(54, 3, 3);
+        height: 22rem; width: 22rem;
+     }
+
+
+     /* ...............................................About us section ends.............................. */
+
+      /* ...............................................order now section starts.............................. */
+      #ordernow{
+        background-color: #FCF6F5FF;
+        border-radius: 1rem;
+        height: 35rem;
+        width: auto;
+        margin: 1rem;
+        background: rgba(255, 2555, 255, .1);
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+      
+        
+
+     }
+
+     #ordernow h2{
+        text-align: center;
+        padding: 1rem;
+     }
+     #ordernow .pic{
+        padding-left: 4rem;
+        
+       
+     }
+
+     #ordernow .pic img{
+        height: 25rem; width: 28rem;
+      
+       
+        
+        
+     }
+     #ordernow .inputbox{
+        background-color: #e8a0c5;
+       
+        height: 33rem; width: 40rem;
+        padding: 2rem;
+
+     }
+
+
+     /* ...............................................order now section ends.............................. */
+
+      /* ...............................................order now section starts.............................. */
+      .fotter{
+        background-color: #FCF6F5FF;
+        border-radius: 1rem;
+        height: 2rem;
+        width: auto;
+        margin: 0.6rem;
+        background: rgba(255, 2555, 255, .1);
+        text-align: center;
+        padding-top: 0.4rem;
+
+     }
+     .fotter i{
+        color: rgb(167, 189, 177);
+     }
+     
+
+     /* ...............................................order now section ends.............................. */
+
+
+
+</style>
+
+<body>
+     <!-- .........................................HTML header section start.................................. -->
+     <div id="header">
+        <div class="container">
+            <nav>
+                logo
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Designs </a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- ..................................................HTML header section ends.......................................... -->
+
+    <!-- ....................................................HTML content sectioon start.................................................... -->
+    <div id="box">
+        <div class="box1">
+            <h2>Sometimes the tickling sound of bangles<br> is just enough to fall in<br> love...!</h2>
+            <a href="#">Shop Now</a>
+            <div class="inbox">
+                <img src="a2.png" alt="">
+                
+            </div>
+            
+          
+
+        </div>
+        <div class="box2">
+            <div class="slider"></div>
+        </div>
+
+    </div>
+
+
+
+    <!-- .............................................HTML content section end.............................................................. -->
+
+    <!-- .................................................HTML Our design section strts.......................................... -->
+     <div class="design">
+          <h2>Our Designs</h2>
+            <div class="gridcontainer">
+                <div class="grid" id="d1"><img src="1.jpg" height="105px" width="220px" > Thread Bangles</div>
+                <div class="grid" id="d2"><img src="2.jpg" height="105px" width="220px" >Kundan Bangles</div>
+                <div class="grid" id="d3"><img src="3.jpg" height="105px" width="220px" >Pearl Bangles</div>
+                <div class="grid" id="d4"><img src="4.jpg" height="105px" width="220px" >Plain Bangles</div>
+                <div class="grid" id="d5"><img src="5.jpg" height="105px" width="220px" >Kalamkari Bangles</div>
+                <div class="grid" id="d6"><img src="6.jpg" height="105px" width="220px" >Velvet Bangles</div>
+                <div class="grid" id="d7"><img src="7.jpg" height="105px" width="220px" >Dulhan Bangles</div>
+                <div class="grid" id="d8"><img src="8.jpg" height="105px" width="220px" >Sare Kuchhus</div>
+         </div>
+     </div>
+
+    <!-- .................................................HTML Our design section ends.......................................... -->
+
+    <!-- .................................................Gallery section strts.......................................... -->
+    <div class="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gridcontainer1">
+            <div class="grid1" id="g1"></div>
+            <div class="grid1" id="g2"></div>
+            <div class="grid1" id="g3"></div>
+            <div class="grid1" id="g4"></div>
+            <div class="grid1" id="g5"></div>
+            <div class="grid1" id="g6"></div>
+            <div class="grid1" id="g7"></div>
+            <div class="grid1" id="g8"></div>
+           
+            
+     </div>
+     </div>
+
+    <!-- .................................................Gallery section ends.......................................... -->
+
+     <!-- .................................................Popular section strts.......................................... -->
+     <div class="popular">
+        <h2>Popular</h2>
+           <div class="gridcontainer2">
+             <div class="grid2" id="p1"></div>
+             <div class="grid2" id="p2"></div>
+             <div class="grid2" id="p3"></div>
+             <div class="grid2" id="p4"></div>
+             <div class="grid2" id="p5"></div>
+             <div class="grid2" id="p6"></div>
+             <div class="grid2" id="p7"></div>
+             <div class="grid2" id="p8"></div>
+           
+            
+         </div>
+     </div>
+
+    <!-- .................................................Popular section ends.......................................... -->
+
+    <!-- .................................................review section strts.......................................... -->
+    <div id="review">
+        <h2>Review</h2>
+        
+        <div class="col1">dfs</div>
+        <div class="col2">fdsa</div>
+        <div class="col3">dffa</div>
+        <div class="col4">daf</div>
+        <div class="col5">fdsa</div>
+    </div>
+     </div>
+
+    <!-- .................................................review section ends.......................................... -->
+
+    <!-- .................................................About us section strts.......................................... -->
+    <div class="aboutus">
+        <h2>About us</h2>
+        <div class="c1">dfsdg</div>
+        <div class="c2">dsgf</div>
+        <div class="c3">hggfh</div>
+        <div class="c4">hggfh</div>
+     </div>
+
+    <!-- .................................................About us section ends.......................................... -->
+
+    <!-- .................................................Order now section strts.......................................... -->
+    <div id="ordernow">
+        <h2>Order Now</h2>
+        <div class="pic"><img src="picb.png"></div>
+        <div class="inputbox">cbhghxsfhfgyj
+            <!-- <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email"> -->
+        </div>
+     </div>
+
+    <!-- .................................................order now section ends.......................................... -->
+
+
+     <!-- .................................................footer section strts.......................................... -->
+     <div class="fotter">
+         &copy; 2023 Rokhaya Bangle Store. Powered By <i>KN Solutions</i>
+     </div>
+
+    <!-- .................................................footter section ends.......................................... -->
+    
+</body>
+</html>
